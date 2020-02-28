@@ -28,9 +28,7 @@ Loop,
 	    mash := mashed
         Send {f down} ;
 		MouseGetPos, MouseX, MouseY
-		ToolTip, %MouseX% x %MouseY%, %MouseX%, %MouseY%
-;		MsgBox,,,key,1
-        sleep, 100
+	        sleep, 100
 		ToolTip
     }
 		
