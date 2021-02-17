@@ -673,3 +673,51 @@ return
    ExitApp
 }
 return
+
+; dao item dup
+-::
+Loop, 10 ; 97
+{
+; MouseMove, 2300, 675 ; player inventory
+MouseMove, 1700, 675 ; shop inventory
+sleep, 500
+send {LButton up}
+send {RButton up}
+sleep, 500
+send {LButton down}
+sleep, 500
+ send {RButton down} ; comment out rbutton on shop inventor
+sleep, 500
+; MouseMove, 1700, 675 ; shop inventory
+MouseMove, 2300, 675 ; player inventory
+sleep, 500
+send {LButton up}
+send {RButton up}
+sleep, 500
+send {LButton down}
+sleep, 500
+send {RButton down}
+sleep, 500
+}
+; MouseMove, 2300, 675 ; player inventory
+; MouseMove, 1700, 675 ; shop inventory
+; sleep, 500
+ send {LButton up}
+ send {RButton up}
+; sleep, 500
+
+; {LButton}, {RButton}
+
+MouseMove, 2995, 340 ; close shop 
+sleep, 100
+send {LButton}
+sleep, 100
+
+; loop, 97 ; mash button for using skill books.
+; {
+; send {0}
+; sleep, 100
+; }
+
+return
+
